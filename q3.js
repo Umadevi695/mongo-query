@@ -1,21 +1,22 @@
-db.products.insertOne({
-  name: "Laptop",
-  description: "A high-performance laptop for developers",
-  price: 1200,
-  imageUrl: "https://picsum.photos/seed/laptop/400/300",
-});
+db.createCollection("products");
+
 db.products.insertMany([
   {
-    name: "Smartphone",
-    description: "An Android smartphone with 5G support",
-    price: 800,
-    imageUrl: "https://picsum.photos/seed/smartphone/400/300",
+    name: "Apple",
+    description: "Fresh and juicy red apple.",
+    imgUrl: "https://example.com/images/apple.jpg",
+    price: 1.5,
   },
   {
-    name: "Headphones",
-    description: "Wireless noise-cancelling headphones",
-    price: 200,
-    imageUrl: "https://picsum.photos/seed/headphones/400/300",
+    name: "Banana",
+    description: "Ripe yellow bananas full of energy.",
+    imgUrl: "https://example.com/images/banana.jpg",
+    price: 0.75,
+  },
+  {
+    name: "Orange",
+    description: "Citrus fruit rich in Vitamin C.",
+    imgUrl: "https://example.com/images/orange.jpg",
+    price: 1.2,
   },
 ]);
-db.products.find();

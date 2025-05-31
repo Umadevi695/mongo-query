@@ -1,4 +1,4 @@
-db.orders.insertMany([Add commentMore actions
+db.orders.insertMany([
   {
     empId: ObjectId("683860a0490c4b45407cb256"),
     items: { 1: 3, 3: 2 },
